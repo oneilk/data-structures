@@ -3,9 +3,18 @@
 	<a href="../index.html">Home</a>
 	<h1>Queue</h1>
 	<h2>Below is a queue</h2>
+
+	<label for="add">Add to Queue</label>
+	<input type="text" id="add" name="add"></html>
+	<button type="button" id="enqueue">Enqueue</button>
+	<button type="button" id="dequeue">Dequeue</button>
 </html>
 <script type="text/javascript" src="../js/queue.js"></script>
 <script type="text/javascript">
-	let test = new Queue('testING!');
-	test.oneil();
+	$( "#enqueue" ).click(update());
+	$( "#dequeue" ).click(update());
+
+	function update() {
+		console.log('updating');
+	}
 </script>
