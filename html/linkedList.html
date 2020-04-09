@@ -15,6 +15,7 @@
 	list.push(1);
 	list.push(2);
 	list.unshift(3);
+	update();
 	function update () {
 		let current = list.head;
 		let html = '';
@@ -32,7 +33,6 @@
 		} else {
 			$( "#linked_list" ).html('');
 			$( "#linked_list" ).html(html);
-			console.log(html);
 		}
 	}
 </script>
