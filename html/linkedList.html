@@ -15,9 +15,23 @@
 	list.push(1);
 	list.push(2);
 	list.unshift(3);
-	let current = list.head;
-	while (current) {
-		console.log(current.value);
-		current = current.next;
+	function update () {
+		let current = list.head;
+		let html = '';
+		while (current) {
+			if (html == '') {
+				html += current.value;
+			} else {
+				html += ' -> ' + current.value;
+			}
+			current = current.next;
+		}
+		if (html == '') {
+			$( "#linked_list" ).html('');
+			$( "#linked_list" ).html('Linked list is empty');
+		} else {
+			$( "#linked_list" ).html('');
+			$( "#linked_list" ).html(html);
+		}
 	}
 </script>
