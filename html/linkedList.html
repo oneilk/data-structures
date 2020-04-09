@@ -3,6 +3,9 @@
 	<a href="../index.html">Home</a>
 	<h1>Doubly Linked List</h1>
 	<hr>
+	<div id="linked_list">
+
+	</div>
 </html>
 <!-- jqery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,5 +15,9 @@
 	list.push(1);
 	list.push(2);
 	list.unshift(3);
-	console.log(list);
+	let current = list.head;
+	while (current) {
+		console.log(current.value);
+		current = current.next;
+	}
 </script>
