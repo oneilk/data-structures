@@ -21,7 +21,8 @@
 	$( "#enqueue" ).click(update);
 	$( "#dequeue" ).click(update);
 
-	function update() {
-		console.log('updating');
+	function update( event ) {
+		console.log(event.target);
+		$( "#queue" ).html('SS');
 	}
 </script>
