@@ -3,7 +3,7 @@ class Queue {
 		this.test = test;
 	}
 
-	test() {
+	oneil() {
 		alert(this.test);
 	}
 }
