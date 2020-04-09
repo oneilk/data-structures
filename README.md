@@ -1,0 +1,1 @@
+A repository to practice and implement fundamental data structures in Javascript.
