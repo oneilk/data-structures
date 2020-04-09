@@ -2,13 +2,19 @@
 <html>
 	<a href="../index.html">Home</a>
 	<h1>Queue</h1>
-	<h2>Below is a queue</h2>
+	<hr>
 
+	<div id="queue">
+
+	</div>
+	<br>
 	<label for="add">Add to Queue</label>
 	<input type="text" id="add" name="add"></html>
 	<button type="button" id="enqueue">Enqueue</button>
+	<br>
 	<button type="button" id="dequeue">Dequeue</button>
 </html>
+<script src="jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../js/queue.js"></script>
 <script type="text/javascript">
 	$( "#enqueue" ).click(update());
