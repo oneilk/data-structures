@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<a href="../index.html">Home</a>
-	<h1>Doubly Linked List</h1>
+	<h1>Singly Linked List</h1>
 	<hr>
 	<div id="linked_list">
 
@@ -11,28 +11,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="../js/linkedList.js"></script>
 <script type="text/javascript">
-	let list = new DoublyLinkedList();
-	list.push(1);
-	list.push(2);
-	list.unshift(3);
-	update();
-	function update () {
-		let current = list.head;
-		let html = '';
-		while (current) {
-			if (html == '') {
-				html += current.value;
-			} else {
-				html += ' -> ' + current.value;
-			}
-			current = current.next;
-		}
-		if (html == '') {
-			$( "#linked_list" ).html('');
-			$( "#linked_list" ).html('Linked list is empty');
-		} else {
-			$( "#linked_list" ).html('');
-			$( "#linked_list" ).html(html);
-		}
-	}
+
 </script>
